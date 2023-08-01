@@ -43,7 +43,7 @@ header>p {
 }
 
 .card {
-    padding: 2rem;
+    /* padding: 2rem; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,7 +58,6 @@ header>p {
 .card__image>img {
     max-width: 100%;
     block-size: auto;
-    /* aspect-ratio: 1/3; */
     object-fit: contain;
 }
 
@@ -73,7 +72,7 @@ header>p {
 }
 
 .swiper-slide .card__image {
-    transform: scale(1.1);
+    user-select: none;
 }
 
 .swiper-slide-active {
@@ -81,5 +80,5 @@ header>p {
 }
 
 .swiper-slide-active .card__image {
-    transform: scale(1.3);
+    transform: scale(1.1);
 }

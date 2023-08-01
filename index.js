@@ -71,14 +71,19 @@ data.forEach((item) => {
 
 const swiper = new Swiper(".swiper", {
   // Optional parameters
-  slidesPerView: 1,
+  slidesPerView: 1.5,
   spaceBetween: 30,
-  direction: "horizontal",
+  centeredSlides: true,
   loop: true,
   watchSlidesProgress: true,
   breakpoints: {
-    768: {
+    1024: {
       slidesPerView: 5,
+      spaceBetween: 30,
+      centeredSlides: true,
+    },
+    700: {
+      slidesPerView: 3,
       spaceBetween: 30,
       centeredSlides: true,
     },
